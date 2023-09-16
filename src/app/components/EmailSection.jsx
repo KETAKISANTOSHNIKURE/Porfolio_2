@@ -46,7 +46,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="md:grid md:grid-cols-1 gap-4 items-center py-4 px-2 xl:gap-20 xl:px-10">
-        <Image src="public/images/about-image.png" width={500} height={500} />
+        <Image src="./images/about-image.png" width={500} height={500} />
       </div>
     </section>
   );
