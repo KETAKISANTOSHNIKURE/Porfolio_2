@@ -1,10 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import EmailIcon from "../../../public/email-icon.svg";
-import GeeksforGeeksIcon from "../../../public/geeksforgeeks-icon.svg"; // Import GFG icon
-import LeetCodeIcon from "../../../public/leetcode-icon.svg"; // Import LeetCode icon
 import Link from "next/link";
 import Image from "next/image";
 
