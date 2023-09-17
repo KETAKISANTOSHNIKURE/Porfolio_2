@@ -115,45 +115,46 @@ const AboutSection = () => {
           <div className="mt-8">
             <div className="tab-buttons">
 
-          <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-              className="tab-button"
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-              className="tab-button"
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-              className="tab-button"
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("badges")}
-              active={tab === "badges"}
-              className="tab-button"
-            >
-              {" "}
-              Badges{" "}
-            </TabButton>
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+                className="tab-button"
+              >
+                {" "}
+                Education{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("skills")}
+                active={tab === "skills"}
+                className="tab-button"
+              >
+                {" "}
+                Skills{" "}
+              </TabButton>
+              
+              <TabButton
+                selectTab={() => handleTabChange("certifications")}
+                active={tab === "certifications"}
+                className="tab-button"
+              >
+                {" "}
+                Certifications{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("badges")}
+                active={tab === "badges"}
+                className="tab-button"
+              >
+                {" "}
+                Badges{" "}
+              </TabButton>
+            </div>
+            <div className="mt-8">
+              {TAB_DATA.find((t) => t.id === tab).content}
+            </div>
           </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
-        </div>
-      </div>
+       </div> 
+     </div>
     </section>
   );
 };
