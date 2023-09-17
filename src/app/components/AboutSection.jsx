@@ -32,27 +32,7 @@ const TAB_DATA = [
       </div>
     ),
   },
-    // content: (
-    //   <ul className="list-disc pl-2">
-    //     <li>
-    //       Year: 2023
-    //       <br />
-    //       B.Tech - Government College of Engineering Amravati  Branch - Electronics & Telecommunication Engg
-
-    //       <br />
-    //       CGPA - 8.12
-    //       <br />
-    //     </li>
-    //     <li> Year: 2019
-    //       <br /> 12th - Taywade College, Nagpur <br />  Stream - General Science <br /> Percentage - 70%
-    //     </li>
-    //     <li>Year: 2017
-    //       <br /> 10th - Saraswati Vidyalaya, Nagpur  <br /> Percentage - 89%
-
-    //     </li>
-    //   </ul>
-    // ),
-  // },
+    
   {
     title: "Skills",
     id: "skills",
