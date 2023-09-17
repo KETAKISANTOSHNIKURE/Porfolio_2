@@ -135,6 +135,7 @@ const AboutSection = () => {
           <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
+              className="tab-button"
             >
               {" "}
               Education{" "}
@@ -142,6 +143,7 @@ const AboutSection = () => {
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
+              className="tab-button"
             >
               {" "}
               Skills{" "}
@@ -150,6 +152,7 @@ const AboutSection = () => {
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
+              className="tab-button"
             >
               {" "}
               Certifications{" "}
@@ -157,6 +160,7 @@ const AboutSection = () => {
             <TabButton
               selectTab={() => handleTabChange("badges")}
               active={tab === "badges"}
+              className="tab-button"
             >
               {" "}
               Badges{" "}
