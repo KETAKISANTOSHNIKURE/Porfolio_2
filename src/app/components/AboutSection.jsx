@@ -131,7 +131,9 @@ const AboutSection = () => {
             <br></br>
             Beyond coding, I'm enchanted by Bharatnatyam, where every step becomes poetry and every gesture a tale!
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="mt-8">
+            <div className="tab-buttons">
+
           <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
