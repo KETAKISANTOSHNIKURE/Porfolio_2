@@ -52,7 +52,7 @@ const Navbar = () => {
           />
 
         </Link>
-        <div className={`mobile-menu md:hidden ${navbarOpen ? 'block' : 'hidden'}`}>
+        <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
