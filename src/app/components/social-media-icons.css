@@ -48,6 +48,10 @@
   opacity: 0;
   /* Hide the icon */
 }
+@media (max-width: 768px) {
+  .social-icons-scroll a.hide-on-mobile {
+    display: none;
+  }
 
 
 @keyframes scroll {
@@ -59,8 +63,5 @@
     transform: translateX(-100%);
     
   }
-  @media (max-width: 768px) {
-  .social-icons-scroll a.hide-on-mobile {
-    display: none;
-  }
+  
 }
