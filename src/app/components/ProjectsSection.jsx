@@ -12,7 +12,7 @@ const projectsData = [
     image: "./images/projects/11.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/KETAKISANTOSHNIKURE/PDetect_AI",
-    previewUrl: "https://sakshiwalode28-parkinson-s-disease-detection-system-app-56ifd7.streamlit.app/",
+    previewUrl: "https://ketakisantoshnikure-pdetect-ai-app2-nmwi15.streamlit.app/",
   },
   {
     id: 2,
