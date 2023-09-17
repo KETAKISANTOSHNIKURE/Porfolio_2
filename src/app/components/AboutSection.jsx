@@ -3,6 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import { FaJava, FaDocker, FaKubernetes, FaJenkins, FaNodeJs, FaTerraform, FaReact } from "react-icons/fa";
+import "./tab-button.css";
 
 
 const TAB_DATA = [
