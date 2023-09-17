@@ -1,0 +1,18 @@
+/* Default styles for tab buttons */
+.tab-button {
+  /* Your existing styles for tab buttons */
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .tab-buttons {
+    /* Adjust the layout for smaller screens, for example, stack buttons vertically */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-button {
+    /* Add styles specific to smaller screens, e.g., margin, padding, font size, etc. */
+    margin-bottom: 10px; /* Adjust the spacing between buttons */
+  }
+}
