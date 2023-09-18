@@ -20,7 +20,7 @@ const projectsData = [
     description: "Welcome to my personal portfolio, a dynamic, visually engaging display of my web development skills, experiences, and passion. Built using Next.js and adorned with Tailwind CSS, it embodies my dedication to crafting both functional and aesthetically pleasing websites.",
     image: "./images/projects/15.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/jenkins_CI-CD_Project",
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/Porfolio_2",
     previewUrl: "/",
   },
   
