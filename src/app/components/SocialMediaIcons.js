@@ -24,7 +24,7 @@ const SocialMediaIcons = () => {
         <a href="https://auth.geeksforgeeks.org/invite/0d6x9o4e/">
           <SiGeeksforgeeks />
         </a>
-        <a href="https://auth.geeksforgeeks.org/invite/0d6x9o4e/">
+        <a href="https://leetcode.com/KETAKI_NIKURE/">
           <TbBrandLeetcode />
         </a>
 
