@@ -38,18 +38,11 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        <li>Java</li>
-        <li>DevOps</li>
-        <li>AWS</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-        <li>Jenkins</li>
-        <li>Ansible</li>
-        <li>Terraform</li>
-        <li>CI/CD Pipelines</li>
-        <li>Next.js</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>REACT</>
+        
       </ul>
     ),
   },
