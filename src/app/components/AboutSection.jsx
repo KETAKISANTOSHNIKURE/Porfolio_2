@@ -41,7 +41,7 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>JAVASCRIPT</li>
-        <li>REACT</>
+        <li>REACT</li>
         
       </ul>
     ),
