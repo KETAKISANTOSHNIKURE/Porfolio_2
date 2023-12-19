@@ -27,8 +27,6 @@ const HeroSection = () => {
                 1000,
                 "Software Developer",
                 1000,
-                "Cloud Developer",
-                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -36,7 +34,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Hello! I'm a passionate Full Stack developer with a keen interest in DevOps practices. With a solid foundation in both frontend and backend technologies, I love crafting complete web solutions that seamlessly integrate user-centric designs with robust functionality.
+            Hello! I'm a dedicated Full Stack developer with a strong foundation in both frontend and backend technologies. I thrive on creating holistic web solutions that harmoniously blend user-centric designs with robust functionality.
           </p>
           <div>
             <Link
