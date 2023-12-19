@@ -4,6 +4,8 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 import { FaJava, FaDocker, FaKubernetes, FaJenkins, FaNodeJs, FaTerraform, FaReact } from "react-icons/fa";
 import "./tab-button.css";
+import "./styles.css";
+
 
 
 const TAB_DATA = [
