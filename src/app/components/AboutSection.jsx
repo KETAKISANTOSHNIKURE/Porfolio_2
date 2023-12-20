@@ -88,11 +88,14 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
+  const [selectedCertification, setSelectedCertification] = useState(null); 
+
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
+       setSelectedCertification(null); // Reset selectedCertification when switching tabs
     });
   };
   const handleImageClick = (certificationId) => {
