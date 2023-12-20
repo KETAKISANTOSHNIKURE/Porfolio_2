@@ -90,11 +90,11 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  // const handleTabChange = (id) => {
-  //   startTransition(() => {
-  //     setTab(id);
-  //   });
-  // };
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
   const handleImageClick = (certificationId) => {
     startTransition(() => {
       setSelectedCertification(certificationId);
