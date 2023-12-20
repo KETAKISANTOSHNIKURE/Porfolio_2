@@ -6,7 +6,19 @@ import { FaJava, FaDocker, FaKubernetes, FaJenkins, FaNodeJs, FaTerraform, FaRea
 import "./tab-button.css";
 import "./styles.css";
 
-
+const CERTIFICATIONS = [
+  { id: "PowerPlatform", name: "Microsoft Certified: Power Platform" },
+  { id: "AzureAIFundamentals", name: "Microsoft Certified: Azure AI Fundamentals" },
+  { id: "Publication", name: "Certificate of Publication" },
+  { id: "InternshipAI", name: "Certificate of Internship AI" },
+  { id: "SparkFoundation", name: "Certificate of Completion: Spark Foundation Internship" },
+  { id: "JapaneseLanguage", name: "Japanese Language" },
+  { id: "TrainingIOT", name: "Certificate of Training IOT" },
+  { id: "WorkflowAutomation", name: "Certificate of Internship Work Flow Automation" },
+  { id: "TrainingCoreJava", name: "Certificate of Training (Core Java)" },
+  { id: "ParticipationEmbeddedSystem", name: "Certificate of Participation Embedded System IIT Bombay" },
+  
+];
 
 const TAB_DATA = [
   {
@@ -54,17 +66,11 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li><a href="https://drive.google.com/file/d/1id6zFiAoIHPk94PZwOjw8UNbxryEbqwg/view?usp=sharing">Microsoft Certified: Power Platform</a></li>
-        <li><a href="https://drive.google.com/file/d/1PwWWCkhByLmduZSJocO7AekXK4iw-kYZ/view?usp=sharing">Microsoft Certified: Azure AI Fundamentals</a></li>
-        <li><a href="https://drive.google.com/file/d/1os4AuUjB37wHrHsBGKqD-URIo1KLXiCp/view?usp=sharing">Certificate of Publication</a></li>
-        <li><a href="https://drive.google.com/file/d/1-RMdcyAg0KmKJY6l4YQEkRUj2oom6ApJ/view?usp=sharing">Certificate of Internship AI</a></li>
-        <li><a href="https://drive.google.com/file/d/1lHe0GgKLNmbMIS5TB8Z4bHRq5aNRsaSK/view?usp=sharing">Certificate of Completion: Spark Foundation Internship</a></li>
-        <li><a href="https://drive.google.com/file/d/12IlmMag0W3wbdN3TdIfz-Ot5_RdmEFF5/view?usp=sharing">Japanese Language</a></li>
-        <li><a href="https://drive.google.com/file/d/1edR7Ef0LCfZ5LoacQQb1c5wj2t4wFS25/view?usp=sharing">Certificate of Training IOT</a></li>
-        <li><a href="https://drive.google.com/file/d/1TiqqFDs8y1JG_1tmdDSmIe0F-MFG2g55/view?usp=sharing">Certificate of Internship Work Flow Automation</a></li>
-        <li><a href="https://drive.google.com/file/d/1kvptsNjgTL7AJbDLBLli6d-6dpczmXpi/view?usp=sharing">Certificate of Training (Core Java)</a></li>
-        <li><a href="https://drive.google.com/file/d/1dzjZTovJkhOEk2_r-XrpbnO_7nMN2CrA/view?usp=sharing">Certificate of Participation Embedded System IIT Bombay</a></li>
-
+        {CERTIFICATIONS.map((certification) => (
+          <li key={certification.id}>
+            <span onClick={() => handleImageClick(certification.id)}>{certification.name}</span>
+          </li>
+        ))}
       </ul>
     ),
   },
@@ -84,10 +90,35 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
+  // const handleTabChange = (id) => {
+  //   startTransition(() => {
+  //     setTab(id);
+  //   });
+  // };
+  const handleImageClick = (certificationId) => {
     startTransition(() => {
-      setTab(id);
+      setSelectedCertification(certificationId);
     });
+  };
+  const renderCertificationContent = () => {
+    const selectedContent = TAB_DATA.find((t) => t.id === "certifications").content;
+
+    if (selectedCertification) {
+      return (
+        <div>
+          <Image
+            className="certification-image"
+            src={`certification_images/${selectedCertification}.jpg`}
+            alt={selectedCertification}
+            width={500}
+            height={500}
+          />
+          <p>{selectedCertification} - Description or details about the certification</p>
+        </div>
+      );
+    }
+
+    return selectedContent;
   };
 
   return (
@@ -131,6 +162,7 @@ const AboutSection = () => {
                 {" "}
                 Certifications{" "}
               </TabButton>
+              
               <TabButton
                 selectTab={() => handleTabChange("badges")}
                 active={tab === "badges"}
@@ -142,6 +174,7 @@ const AboutSection = () => {
             </div>
             <div className="mt-8">
               {TAB_DATA.find((t) => t.id === tab).content}
+              {renderCertificationContent()}
             </div>
           </div>
        </div> 
