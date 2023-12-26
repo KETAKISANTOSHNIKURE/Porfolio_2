@@ -179,9 +179,8 @@ const AboutSection = () => {
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
              <div className="mt-8">
-              {TAB_DATA.find((t) => t.id === tab).content}
-              
-            </div>
+            {renderCertificationContent()}
+          </div>
           </div>
        </div> 
      </div>
