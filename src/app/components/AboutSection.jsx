@@ -98,11 +98,11 @@ const AboutSection = () => {
        setSelectedCertification(null); // Reset selectedCertification when switching tabs
     });
   };
-  const handleImageClick = (certificationId) => {
-    startTransition(() => {
-      setSelectedCertification(certificationId);
-    });
-  };
+  // const handleImageClick = (certificationId) => {
+  //   startTransition(() => {
+  //     setSelectedCertification(certificationId);
+  //   });
+  // };
   const renderCertificationContent = () => {
     const selectedContent = TAB_DATA.find((t) => t.id === "certifications").content;
 
