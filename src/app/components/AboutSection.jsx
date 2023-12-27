@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 import { FaJava, FaDocker, FaKubernetes, FaJenkins, FaNodeJs, FaTerraform, FaReact } from "react-icons/fa";
 import "./tab-button.css";
 import "./styles.css";
-import { useTheme } from "./ThemeContext"
+
 
 
 const TAB_DATA = [
