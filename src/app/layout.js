@@ -18,8 +18,8 @@
 //}
 // Layout.js
 import React from 'react';
-import { ThemeProvider } from '../ThemeContext';
-import ThemeToggle from '../ThemeToggle';
+import { ThemeProvider } from '.components/ThemeContext';
+import ThemeToggle from '.components/ThemeToggle';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
