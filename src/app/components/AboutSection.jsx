@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 import { FaJava, FaDocker, FaKubernetes, FaJenkins, FaNodeJs, FaTerraform, FaReact } from "react-icons/fa";
 import "./tab-button.css";
 import "./styles.css";
-
+import { useTheme } from "./ThemeContext"
 
 
 const TAB_DATA = [
@@ -81,8 +81,13 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
+  const { isDarkTheme } = useTheme();
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
+  const containerStyle = {
+    backgroundColor: isDarkTheme ? '#333333' : '#ffffff',
+    color: isDarkTheme ? '#ffffff' : '#000000',
+  };
 
   const handleTabChange = (id) => {
     startTransition(() => {
