@@ -81,13 +81,10 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const { isDarkTheme } = useTheme();
+  
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
-  const containerStyle = {
-    backgroundColor: isDarkTheme ? '#333333' : '#ffffff',
-    color: isDarkTheme ? '#ffffff' : '#000000',
-  };
+  
 
   const handleTabChange = (id) => {
     startTransition(() => {
