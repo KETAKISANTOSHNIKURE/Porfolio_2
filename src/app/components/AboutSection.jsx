@@ -44,6 +44,10 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>JAVASCRIPT</li>
         <li>REACT</li>
+        <li>JAVA</li>
+        <li>MYSQL</li>
+        <li>AWS</li>
+        <li>PYTHON</li>
         
       </ul>
     ),
