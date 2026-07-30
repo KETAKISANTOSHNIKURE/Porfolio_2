@@ -1,18 +1,19 @@
-/* Default styles for tab buttons */
-.tab-button {
-  /* Your existing styles for tab buttons */
+/* small tab button styling */
+.tab-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-/* Media query for screens with a maximum width of 768px (adjust as needed) */
-@media (max-width: 768px) {
-  .tab-buttons {
-    /* Adjust the layout for smaller screens, for example, stack buttons vertically */
-    display: flex;
-    flex-direction: column;
-  }
+.tab-button {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.02);
+  color: #cbd5e1;
+  border: 1px solid rgba(255,255,255,0.03);
+}
 
-  .tab-button {
-    /* Add styles specific to smaller screens, e.g., margin, padding, font size, etc. */
-    margin-bottom: 10px; /* Adjust the spacing between buttons */
-  }
+.tab-button.active {
+  background: linear-gradient(90deg, rgba(139,92,246,1) 0%, rgba(236,72,153,1) 100%);
+  color: white;
 }
