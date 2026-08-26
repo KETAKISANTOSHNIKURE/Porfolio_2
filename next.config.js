@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Use standard server deployment on Vercel
+  output: 'export',
+  basePath: '/Porfolio_2',
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
-  swcMinify: true,
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
